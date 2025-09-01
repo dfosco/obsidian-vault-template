@@ -1,0 +1,29 @@
+{
+	"nodes":[
+		{"id":"a2b7c297756be5a7","type":"group","x":-1080,"y":-2240,"width":3480,"height":2400,"label":"First 90 Days"},
+		{"id":"d4f0a26180877c92","type":"text","text":"**Sticking with what you know.** You believe you will be successful in the new role by doing the same things you did in your previous role, only more so. You fail to see that success in the new role requires you to stop doing some things and to embrace new competencies.","x":-890,"y":-1960,"width":820,"height":140,"color":"1"},
+		{"id":"9b9969d824c9a1ad","type":"text","text":"**Coming in with “the” answer.** You come in with your mind made up, or you reach conclusions too quickly about “the” problems and “the” solutions. You alienate people who could help you understand what’s going on, and you squander opportunities to develop support for good solutions.","x":-890,"y":-1774,"width":820,"height":160,"color":"1"},
+		{"id":"3166a63f6513bb90","type":"text","text":"**Attempting to do too much**. You rush off in all directions, launching multiple initiatives in the hope that some will pay off. People become confused, and no critical mass of resources gets focused on key initiatives.","x":155,"y":-1960,"width":820,"height":107,"color":"1"},
+		{"id":"da004fe664dcefa7","type":"text","text":"**Falling prey to the “action imperative.”** You feel as if you need to take action, and you try too hard, too early to put your own stamp on the organization. You are too busy to learn, and you make bad decisions and catalyze resistance to your initiatives.","x":155,"y":-1820,"width":820,"height":100,"color":"1"},
+		{"id":"6c40492704ae5b0a","type":"text","text":"**Setting unrealistic expectations.** You don’t negotiate your mandate or establish clear, achievable objectives. You may perform well but still fail to meet the expectations of your boss and other key stakeholders.","x":155,"y":-1670,"width":820,"height":120,"color":"1"},
+		{"id":"1ab0c4016e5e3329","type":"text","text":"#### Set clear goals","x":360,"y":-800,"width":410,"height":80,"color":"4"},
+		{"id":"82473ea571efd760","type":"text","text":"#### Build Context","x":-720,"y":-800,"width":480,"height":80,"color":"6"},
+		{"id":"c2126142eb963e20","type":"text","text":"**Reset expectations** Ask questions that define new baseline expectations for your new context","x":-720,"y":-667,"width":480,"height":87,"color":"6"},
+		{"id":"74043e7b227cca69","type":"text","text":"**Timebox your goals** For each period of onboarding, define a limited set of goals with a expected deliveries","x":360,"y":-667,"width":480,"height":107,"color":"4"},
+		{"id":"f0f5054ae522b77a","type":"text","text":"**Hold space for listening** Be curious about people and ask questions that invite their way of thinking","x":-720,"y":-540,"width":480,"height":87,"color":"6"},
+		{"id":"0664273152576c76","type":"text","text":"**Walk, then run** You gotta learn before you start taking action. But there's never too early when emergency knocks — or otherwise your gut is telling you to jump in.","x":360,"y":-527,"width":480,"height":147,"color":"4"},
+		{"id":"2e17f9ac8596dec5","type":"text","text":"**Neglecting horizontal relationships.** You spend too much time focused on vertical relationships—up to the boss and down to direct reports—and not enough on peers and other stakeholders. You don’t fully understand what it will take to succeed, and you miss early opportunities to build supportive alliances.","x":1270,"y":-1960,"width":820,"height":140,"color":"1"},
+		{"id":"05a101e4f3de2371","type":"text","text":"**Engaging in the wrong type of learning.** You spend too much time focused on learning about the technical part of the business and not enough about the cultural and political dimensions of your new role. You don’t build the cultural insight, relationships, and information conduits you need if you’re to understand what is really going on.","x":1270,"y":-1790,"width":820,"height":140,"color":"1"},
+		{"id":"0b0a6d626ee31100","type":"text","text":"**Eyes on the prize** More than just building context, get early visibility on the long-term vision and goals for the organization. While direct impact on these goals will come with time, having it on your sigh","x":360,"y":-340,"width":480,"height":147,"color":"4"},
+		{"id":"9c74ea57f257d424","type":"text","text":"#### Foster relationships","x":1483,"y":-800,"width":395,"height":80,"color":"5"},
+		{"id":"22a062d20d138b53","type":"text","text":"**The team is the product** More than ever, the job is to enable the people and maintain the processes that create the product.","x":1483,"y":-667,"width":480,"height":107,"color":"5"},
+		{"id":"e1f0df4e172c0cf1","type":"text","text":"**Be there for people** Check in on your people, help them do their best work, and try to get burdens out of their way.","x":1483,"y":-520,"width":480,"height":107,"color":"5"},
+		{"id":"062995e637207e4e","type":"text","text":"**Understand the models** The personal relations, the incentive structures, and culture of the organization shape the product as much as the technical architecture and revenue model.","x":1483,"y":-380,"width":480,"height":140,"color":"5"},
+		{"id":"daa1dc3eaa4cec7c","type":"text","text":"**Reserve capacity** Part of accepting ambiguity is leaving space to explore, and work on it. And honestly, also rest your brain every now and then.","x":360,"y":-160,"width":480,"height":120,"color":"4"}
+	],
+	"edges":[
+		{"id":"72e3415b091244f3","fromNode":"9b9969d824c9a1ad","fromSide":"bottom","toNode":"82473ea571efd760","toSide":"top"},
+		{"id":"4aad17b4517893be","fromNode":"6c40492704ae5b0a","fromSide":"bottom","toNode":"1ab0c4016e5e3329","toSide":"top"},
+		{"id":"f0a0754fc98080f9","fromNode":"05a101e4f3de2371","fromSide":"bottom","toNode":"9c74ea57f257d424","toSide":"top"}
+	]
+}
