@@ -1,0 +1,239 @@
+
+/* Unstrike text for in progress task */
+body:not(.tasks) li[data-task='-'].task-list-item.is-checked {
+  text-decoration: none !important;
+  color: var(--text-normal) !important;
+}
+
+/* Add background color to in progress task */
+li[data-line] > input:checked {
+  background-color: var(--checkbox-color) !important;
+  border-color: var(--checkbox-color) !important;
+  -webkit-mask-image: none !important;
+  border-radius: 4px;
+}
+
+
+/* Style [-] AND [✔︎] markers on task */
+li[data-task-status-type] >  input.task-list-item-checkbox.task-list-item-checkbox:checked::after {
+  content: '' !important;
+  background-color: var(--color-base-00) !important;
+}
+
+/* Style [-] marker on task */
+li[data-task-status-type="IN_PROGRESS"] >  input.task-list-item-checkbox.task-list-item-checkbox:checked::after {
+  left: 0.5px !important;
+}
+
+/* Adjust list-bullet to align with checkboxes */
+.markdown-rendered .list-bullet {
+  margin-inline-start: -16px !important;
+}
+
+/* Hide worked tags from preview mode to unclutter */
+.dataview.inline-field:has(span[data-dv-key="worked"]) {
+  /* display: none !important; */
+}
+
+/* Add highlight styles for em>em */
+.markdown-rendered em>em,
+.markdown-rendered strong>em {
+  color: var(--color-base-30) !important;
+  font-weight: 600 !important;
+  font-style: normal;
+  background-color: var(--em-color) !important;
+  border-radius: 2px !important;
+  padding: 4px !important;
+}
+
+/* Hide external link styling */
+
+.markdown-rendered .external-link {
+    background-image: none;
+    padding-right: 0;
+}
+
+/* custom dv tags */
+
+[data-dv-key="tag"] {
+  display: none
+}
+
+.dataview:has([data-dv-key="tag"]) .inline-field-value {
+  background-color: transparent;
+  padding: 0;
+}
+
+/* === === === === */
+/* customize-worked-dvtags */
+/* === === === === */
+
+.dataview.inline-field:has([data-dv-key="worked"])::before {
+  content: ' 🔄 ';
+  font-size: small;
+}
+
+.callout:has(.contains-task-list) .dataview.inline-field:has([data-dv-key="worked"]) {
+  & {
+   padding-left: 5px; 
+  }
+  
+  .inline-field-value {
+    max-width: 40px;
+    overflow-x: clip;
+    white-space: nowrap;
+    display: inline-flex;
+    justify-content: flex-end;
+  }
+}
+
+.task-done,
+.dataview.inline-field:has([data-dv-key="worked"]) {
+ white-space: nowrap;
+ background-color: var(--color-base-10) !important;
+ color: var(--color-base-40) !important;
+ padding: 2px 4px; 
+ border-radius: 4px;
+ 
+ * {
+    background-color: transparent;
+    font-family: inherit;
+    font-size: small;
+    padding: 0 2.5px;
+    display: inline-block;
+ }
+
+ .inline-field-key {
+    display: none;
+ }
+}
+
+
+/* === === === === */
+/* Add in-progress tasks */
+/* === === === === */
+
+/* SVG line for cancelled/non-task ('- [-]') */
+  .markdown-preview-view li[data-task="-"]:not([data-task="x"])>.task-list-item-checkbox::after {
+    content: '';
+    /* top:2px !important;
+    bottom:2px !important; */
+    /* background-color: white !important; */
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 14 14' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.75' y='6.5' width='12' height='2.4'/%3E%3C/svg%3E") !important;
+  }
+
+  li[data-task="-"] .tasks-list-text .task-description {
+    color: var(--text-normal) !important;
+  }
+
+  /* Add task edit arrow */
+  .tasks-edit::after {
+    content: '↗️' !important;
+  }
+
+  /* Hide post-pone block */
+  .tasks-postpone::after {
+    display: none;
+  }
+
+  .task-done {
+    margin-left: 4px;
+  }
+
+/* === === === === */
+/* Hide task backlink */
+/* === === === === */
+
+.tasks-backlink {
+  display: none !important;
+}
+
+.callout:has(.contains-task-list) .tasks-backlink:has(.internal-link) {
+  display: none !important;
+}
+
+/* === === === === */
+/* Restyle subtask */
+/* === === === === */
+
+.task-list-item:has([href="#subtask"]) .task-list-item-checkbox {
+  border-radius: 100px;
+  filter: hue-rotate(45deg) saturate(0.5);
+}
+
+/* === === === === */
+/* Customize cancelled tag */
+/* === === === === */
+
+.task-cancelled span {
+  font-size: small;
+  white-space: nowrap;
+  background-color: var(--color-base-10) !important;
+  color: var(--color-base-40) !important;
+  padding: 2px 4px;   
+  border-radius: 4px;
+  margin-left: 4px;
+}
+
+/* === === === === */
+/* Wider Content Width */
+/* === === === === */
+
+  .markdown-source-view.is-readable-line-width .CodeMirror,
+.markdown-preview-view.is-readable-line-width .CodeMirror,
+.markdown-source-view.is-readable-line-width .markdown-preview-sizer,
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* === === === === */
+/* Internal Links */
+/* === === === === */
+
+
+.markdown-rendered .internal-link {
+    /* color: var(--text-accent-hover) !important; */
+    background: hsl(var(--accent-h), var(--accent-s), 90%);
+    color: hsl(var(--accent-h), var(--accent-s), 30%) !important;
+    padding: var(--tag-padding-y) calc(var(--tag-padding-x)/3) calc(var(--tag-padding-y)*1.5) calc(var(--tag-padding-x)/3);
+    border-radius: var(--radius-s);
+    text-decoration: none;
+    font-style: normal;
+    font-size: 0.8em
+  }
+  
+  .markdown-rendered .internal-link:hover {
+      background: hsl(var(--accent-h), var(--accent-s), 85%);
+      color: hsl(var(--accent-h), var(--accent-s), 10%);
+      text-decoration: none;
+  }
+  
+  .markdown-rendered *:not(h1,h2,h3,h4) > .internal-link::before {
+    content: "[[";
+    margin-right: 0.2em;
+    opacity: 0.3;
+
+  }
+  .markdown-rendered *:not(h1,h2,h3,h4) > .internal-link::after {
+    content: "]]";
+    margin-right: 0.2em;
+    opacity: 0.3;
+
+  } 
+
+  .markdown-rendered *:has(h1,h2,h3,h4) > .internal-link {
+      padding-right: 0.2em !important;
+      padding-left: 0.2em !important;
+  }
+
+  /* Internal link inside heading */
+
+  h1:has(.internal-link:only-child),
+  h2:has(.internal-link:only-child),
+  h3:has(.internal-link:only-child),
+  h4:has(.internal-link:only-child),
+  h5:has(.internal-link:only-child),
+  h6:has(.internal-link:only-child ){
+    margin: 0.5em 0 0.5em 0 !important
+  }

@@ -1,0 +1,203 @@
+{
+  "main": {
+    "id": "5ea1d79e2050b272",
+    "type": "split",
+    "children": [
+      {
+        "id": "52057c6d475fe99f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5d14fe1646ccd1a8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "projects/driver/Driver Experience.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Driver Experience"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fc25b51f7af8f7d6",
+    "type": "split",
+    "children": [
+      {
+        "id": "499d51a15271d1bc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "860b2f9ccc6af595",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "4d59b58d47af41e3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": ".com",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "c78a556dea9b7cb1",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "18c64614fdbbf8c7",
+    "type": "split",
+    "children": [
+      {
+        "id": "da3c050d912a806d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "39298038ccb8baf2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "_daily/daily-notes.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for daily-notes"
+            }
+          },
+          {
+            "id": "1940e824614fe80a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "_daily/daily-notes.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from daily-notes"
+            }
+          },
+          {
+            "id": "77a3f7bed2535d76",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "3baef5877ff000bc",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "_daily/daily-notes.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of daily-notes"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "5d14fe1646ccd1a8",
+  "lastOpenFiles": [
+    "README.md",
+    "projects/rider/Rider Experience.md",
+    "projects/driver/Driver Experience.md",
+    "_daily/daily-notes.md",
+    "projects/rider/Rider Experience - August Design Push.md",
+    "projects/rider/images/Rider Experience - August Design Push-1.png",
+    "projects/rider/images/Rider Experience - August Design Push.png",
+    "obsidian-basics.md",
+    "images/Obsidian Basics.png",
+    "images",
+    "__basics",
+    "projects/rider/images/Pasted image 20250901170134.png",
+    "projects/rider/images/rider-exp.png",
+    "projects/rider/images/Pasted image 20250901170109.png",
+    "projects/rider/images/rider-exp-1.png",
+    "projects/rider/images/Rider Experience – August Design Push.png",
+    "projects/rider/images",
+    "Pasted image 20250901165401.png",
+    "Rider Experience – August Design Push.png",
+    "projects/driver",
+    "projects/rider",
+    "projects.md",
+    "projects",
+    "wordlist.txt.sb-8bcbbe46-r7z37H",
+    "wordlist.txt",
+    "Untitled copy.txt",
+    "Untitled copy.md",
+    "customizations.css"
+  ]
+}
